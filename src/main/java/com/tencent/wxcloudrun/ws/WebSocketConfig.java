@@ -21,6 +21,6 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         // 注册一个 STOMP 端点，客户端可以通过这个端点连接到 WebSocket 服务
-        registry.addEndpoint("/ws").withSockJS();
+        registry.addEndpoint("/wss").withSockJS();
     }
 }
